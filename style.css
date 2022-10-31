@@ -28,13 +28,15 @@ body {
 }
 
 .container {
+  margin-top: 64px;
   width: 960px;
   margin: 0 auto;
 }
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
+  margin-top: 64px;
 }
 
 h2 {
@@ -57,6 +59,7 @@ h2 {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -72,7 +75,7 @@ h2 {
 .btn--small,
 #small {
   font-size: 14px;
-  padding: 8px 12px;
+  padding: 8px 16px;
 }
 
 /* ------------------------ */
@@ -87,24 +90,26 @@ header {
   margin-top: 48px;
 }
 
-.header-text-box {
+.header-shadow {
   align-self: center;
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.101); */
 }
 
 h1 {
   font-size: 44px;
   /* 44 / 52 / 62 */
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   line-height: 1.1;
   letter-spacing: -1px;
 }
 
 .header-text {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 /* FEATURES */
@@ -113,7 +118,7 @@ img {
   height: 32px;
   width: 32px;
   stroke-width: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .features-title {
@@ -128,6 +133,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -140,18 +146,29 @@ img {
 }
 
 .testimonial-text {
+  color: #e6fcf5
   font-style: italic;
   margin-bottom: 24px;
+}
+
+.testimonial-author{
+  color : #c3fae8
 }
 
 /* CHAIRS */
 
 .chair {
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.103);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .chair-box {
-  padding: 24px;
+  padding: 32px;
 }
 
 h3 {
@@ -160,14 +177,14 @@ h3 {
 
 .chair-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .chair-details li {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .chair-details li:last-child {
@@ -184,6 +201,7 @@ h3 {
 
 .chair-price {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
