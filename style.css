@@ -126,6 +126,7 @@ img {
 }
 
 .features-text {
+  margin: 0;
 }
 
 /* TESTIMONIAL */
@@ -146,13 +147,13 @@ img {
 }
 
 .testimonial-text {
-  color: #e6fcf5
+  color: #e6fcf5;
   font-style: italic;
   margin-bottom: 24px;
 }
 
-.testimonial-author{
-  color : #c3fae8
+.testimonial-author {
+  color: #c3fae8;
 }
 
 /* CHAIRS */
@@ -207,4 +208,69 @@ h3 {
 
 footer {
   margin-bottom: 48px;
+}
+
+/* 
+------------------- Buy Latest Chairs Page -------------------
+*/
+
+.text-banner {
+  background-color: #087f5b;
+  color: #e6fcf5;
+  font-size: xx-large;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px 25px;
+  border-radius: 8px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 500px;
+  column-gap: 24px;
+  row-gap: 24px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.product-list li {
+  list-style: none;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chair-images {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  border-bottom: 10px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.12);
+}
+
+.price-info {
+  margin-top: 16px;
+}
+
+.cart-button:link,
+.cart-button:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  padding: 8px 16px;
+  margin-left: 12px;
+}
+
+.cart-button:hover {
+  background-color: #099268;
 }
