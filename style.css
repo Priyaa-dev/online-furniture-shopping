@@ -230,7 +230,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   border-radius: 100px;
-  padding: 8px 16px;
+  padding: 12px 18px;
   margin-left: 12px;
   margin-top: 20px;
 }
@@ -324,20 +324,25 @@ footer {
 ----------------------- FAQs Page -------------------------
 */
 
+.faq {
+  margin-bottom: 0;
+}
+
 .accordion {
   width: 700px;
   margin: 100px auto;
 }
 
 .active-item {
-  border-top: #087f5b 5px solid;
+  border-top: #087f5b 4px solid;
   margin-bottom: 30px;
   padding: 24px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 10px;
+  column-gap: 16px;
+  row-gap: 24px;
 }
 
 .inactive-item {
@@ -347,11 +352,18 @@ footer {
 
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 10px;
+  column-gap: 16px;
+  row-gap: 24px;
 }
 
-.inactive-item p {
+.inactive-item .text,
+.inactive-item svg {
   color: #495057;
+  stroke: #495057;
+}
+
+.inactive-item .number {
+  color: #ced4da;
 }
 
 .number,
