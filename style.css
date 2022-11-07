@@ -29,14 +29,14 @@ body {
 
 .container {
   margin-top: 64px;
-  width: 1024px;
+  width: 1124px;
   margin: 0 auto;
 }
 
 header,
 section {
   margin-bottom: 80px;
-  margin-top: 64px;
+  margin-top: 56px;
 }
 
 h2 {
@@ -214,6 +214,38 @@ footer {
 ------------------- Buy Latest Chairs Page -------------------
 */
 
+/* .menu { 
+  margin: 0;
+  padding: 0;
+}*/
+
+.home-button:visited,
+.home-button:link {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 8px 16px;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.home-button:hover {
+  background-color: #099268;
+}
+
+.home-icon {
+  stroke: #e6fcf5;
+  height: 16px;
+  width: 16px;
+  stroke-width: 2.5px;
+}
+
 .text-banner {
   background-color: #087f5b;
   color: #e6fcf5;
@@ -286,4 +318,70 @@ footer {
   height: 16px;
   width: 16px;
   stroke-width: 2.5px;
+}
+
+/* 
+----------------------- FAQs Page -------------------------
+*/
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+}
+
+.active-item {
+  border-top: #087f5b 5px solid;
+  margin-bottom: 30px;
+  padding: 24px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+}
+
+.inactive-item {
+  margin-bottom: 30px;
+  padding: 24px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+}
+
+.inactive-item p {
+  color: #495057;
+}
+
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #087f5b;
+}
+
+.icon {
+  stroke: #087f5b;
+  height: 24px;
+  width: 24px;
+  stroke-width: 2.5px;
+}
+
+.hidden-box {
+  grid-column: 2;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  color: #343a40;
+  margin-bottom: 24px;
+}
+
+.hidden-box ul {
+  color: #868e96;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
