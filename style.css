@@ -219,6 +219,8 @@ footer {
   padding: 0;
 }*/
 
+/* Navigation Buttons */
+
 .home-button:visited,
 .home-button:link {
   background-color: #087f5b;
@@ -246,11 +248,14 @@ footer {
   stroke-width: 2.5px;
 }
 
+/* Carousel section */
+
 .carousel {
-  width: 950px;
+  width: 800px;
   background-color: #087f5b;
   margin: 100px auto;
   padding: 32px 48px 32px 86px;
+  /* padding: top right bottom left (clockwise) */
 
   border-radius: 8px;
   color: #fff;
@@ -269,48 +274,45 @@ footer {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
-.carousel-icon {
+.carousel-btn {
+  /* left: 0;
+  top: 50%; */
   background-color: #fff;
-  stroke: #087f5b;
-
-  height: 24px;
-  width: 24px;
-
-  /* padding: 8px; */
-  stroke-width: 2.5px;
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+  border-radius: 50%;
+  border: #087f5b;
 
   position: absolute;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
 }
 
-/* .carousel-btn {
-  position: relative;
-} */
-
-.left-carousel-btn {
+.btn--left {
   left: 0;
   top: 50%;
 
-  height: 40px;
-  width: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
 
   transform: translate(50%, -50%);
 }
 
-.right-carousel-btn {
-  right: 0;
-  top: 50%;
-
-  height: 40px;
-  width: 40px;
-
-  transform: translate(50%, -50%);
+.carousel-icon {
+  stroke: #087f5b;
+  height: 24px;
+  width: 24px;
+  stroke-width: 2.5px;
 }
 
 .testimonial {
@@ -335,6 +337,32 @@ footer {
   color: #c3fae8;
 }
 
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+
+  background-color: #fff;
+  border: #087f5b 2px solid;
+  border-radius: 50%;
+}
+
+.dot--first {
+  background-color: #087f5b;
+}
+
+/* Banner Section */
+
 .text-banner {
   background-color: #087f5b;
   color: #e6fcf5;
@@ -346,6 +374,8 @@ footer {
   padding: 40px 20px;
   border-radius: 8px;
 }
+
+/* Product section */
 
 .product-list {
   padding-left: 24px;
