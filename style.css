@@ -444,33 +444,38 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 }
 
 .pageno {
-  margin: 0 5px;
-  border-radius: 100%;
+  height: 34px;
+  width: 34px;
+  display: inline-block;
+  border-radius: 50%;
   background-color: #fff;
   border: none;
-  padding: 8px 12px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #087f5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.pageno:hover {
+.pageno:hover,
+.pageno:active,
+.pageno.pageno--current {
   background-color: #087f5b;
   color: #fff;
   cursor: pointer;
 }
 
-
-
 .page-btn {
   border: 1px solid #087f5b;
   border-radius: 50%;
-  height: 30;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   margin: 0 5px;
   background: none;
   cursor: pointer;
