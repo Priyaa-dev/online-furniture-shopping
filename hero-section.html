@@ -29,9 +29,31 @@
     }
 
     header {
-      background-color: aquamarine;
+      /* background-color: aquamarine; */
       /* vh = viewport height, vw = viewport width */
       height: 100vh;
+      color: #fff;
+      position: relative;
+
+      background-image: linear-gradient(rgba(11, 11, 11, 0.545), rgba(11, 11, 11, 0.545)), url(02hero.jpg);
+      background-size: cover;
+    }
+
+    .header-container {
+      width: 1200px;
+      /* background-color: green; */
+      /* With reference to PARENT element */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      /* With reference to ELEMENT SIZE */
+      transform: translate(-50%, -50%);
+    }
+
+    .header-container-inner {
+      width: 50%;
+      /* background-color: black; */
     }
 
     nav {
@@ -39,28 +61,28 @@
       font-weight: 700;
       display: flex;
       justify-content: space-between;
-      /* margin-bottom: 48px; */
     }
 
     h1 {
       font-size: 52px;
       font-weight: 700;
       margin-bottom: 32px;
+      line-height: 1.05;
     }
 
     p {
       font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 48px;
+      line-height: 1.4;
+      margin-bottom: 42px;
     }
 
     .btn:link,
     .btn:visited {
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       color: #fff;
       background-color: #e67e22;
-      padding: 16px 32px;
+      padding: 14px 28px;
       text-decoration: none;
       border-radius: 10px;
     }
@@ -80,11 +102,14 @@
       <div>NAVIGATION</div>
     </nav>
 
-    <div class="container">
-      <h1>A healthy meal delivered to your door, every single day</h1>
-      <p> The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal
-        tastes and nutritional needs.</p>
-      <a href="#" class="btn">Start eating well</a>
+    <div class="header-container">
+      <div class="header-container-inner">
+        <h1>A healthy meal delivered to your door, every single day</h1>
+        <p> The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
+          personal
+          tastes and nutritional needs.</p>
+        <a href="#" class="btn">Start eating well</a>
+      </div>
     </div>
   </header>
 
